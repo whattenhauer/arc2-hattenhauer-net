@@ -1,0 +1,12 @@
+name = "arc2-hattenhauer-net"
+
+# Production - deploys to arc2.hattenhauer.net
+[[routes]]
+pattern = "arc2.hattenhauer.net"
+custom_domain = true
+
+# Staging environment
+[env.staging]
+[[env.staging.routes]]
+pattern = "staging.arc2.hattenhauer.net"
+custom_domain = true

@@ -32,7 +32,6 @@ head_sampling_rate = 1
 directory = "./assets"
 
 
-compatibility_date = "2025-10-08"
 compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]

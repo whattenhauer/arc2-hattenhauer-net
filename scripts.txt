@@ -1,4 +1,0 @@
-bscounter
-guestbook
-formmail
-chat

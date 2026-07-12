@@ -1,12 +1,18 @@
 name = "arc2-hattenhauer-net"
+compatibility_date = "2026-07-12"
 
-# Production - deploys to arc2.hattenhauer.net
-[[routes]]
-pattern = "arc2.hattenhauer.net"
-custom_domain = true
+routes = [
+  { pattern = "arc2.hattenhauer.net/*", zone_name = "hattenhauer.net" }
+]
 
-# Staging environment
+[assets]
+directory = "./assets"
+
 [env.staging]
-[[env.staging.routes]]
-pattern = "staging.arc2.hattenhauer.net"
-custom_domain = true
+name = "arc2-hattenhauer-net-staging"
+routes = [
+  { pattern = "staging.arc2.hattenhauer.net/*", zone_name = "hattenhauer.net" }
+]
+
+[env.staging.assets]
+directory = "./assets"

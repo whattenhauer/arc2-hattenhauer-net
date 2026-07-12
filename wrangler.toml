@@ -30,3 +30,11 @@ head_sampling_rate = 1
 
 [env.staging.assets]
 directory = "./assets"
+
+
+compatibility_date = "2025-10-08"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "arc2d1"
+database_id = "9854f268-33fe-44d0-a04a-7e01b1af0d60"

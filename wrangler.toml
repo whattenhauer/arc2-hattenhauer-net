@@ -1,6 +1,12 @@
 name = "arc2-hattenhauer-net"
 compatibility_date = "2026-07-12"
 
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "arc2d1"
+database_id = "9854f268-33fe-44d0-a04a-7e01b1af0d60"
+
 routes = [
   { pattern = "arc2.hattenhauer.net/*", zone_name = "hattenhauer.net" }
 ]
@@ -30,10 +36,3 @@ head_sampling_rate = 1
 
 [env.staging.assets]
 directory = "./assets"
-
-
-compatibility_flags = ["nodejs_compat"]
-
-[[d1_databases]]
-binding = "arc2d1"
-database_id = "9854f268-33fe-44d0-a04a-7e01b1af0d60"
